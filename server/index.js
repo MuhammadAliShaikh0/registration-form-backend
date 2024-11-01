@@ -12,7 +12,7 @@ app.use(cors({
         credentials: true
     }));
 
-mongoose.connect("mongodb+srv://ali:alipracticebed@cluster0.5vt25.mongodb.net/users")
+mongoose.connect("")
 
 app.post('/register', async (req, res) => {
     const { name, email, password } = req.body;
