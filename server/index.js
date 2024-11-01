@@ -6,7 +6,11 @@ const usersModel = require('./models/users');
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+        origin: ["https://registration-form-backend-api.vercel.app/"],
+        methods: ["POST", "GET"],
+        credentials: true
+    }));
 
 mongoose.connect("mongodb+srv://ali:alipracticebed@cluster0.5vt25.mongodb.net/users")
 
