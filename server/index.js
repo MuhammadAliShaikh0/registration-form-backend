@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect("mongodb+srv://ali:alipracticebed@cluster0.5vt25.mongodb.net/users")
+mongoose.connect("")
 
 app.post('/register', async (req, res) => {
     const { name, email, password } = req.body;
