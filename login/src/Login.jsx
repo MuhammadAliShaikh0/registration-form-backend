@@ -10,7 +10,7 @@ function Login() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const result = await axios.post('http://localhost:2229/login', { email, password });
+            const result = await axios.post('https://registration-form-backend-api.vercel.app/login', { email, password });
             if (result.data === "Success") {
                 navigate('/home');
             } else {
