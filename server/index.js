@@ -7,7 +7,7 @@ const usersModel = require('./models/users');
 const app = express();
 app.use(express.json());
 app.use(cors({
-        origin: ["https://registration-form-backend-api.vercel.app/"],
+        origin: [""],
         methods: ["POST", "GET"],
         credentials: true
     }));
