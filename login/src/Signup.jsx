@@ -11,7 +11,7 @@ function Signup() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('https://registration-form-backend-api.vercel.app/', { name, email, password });
+            await axios.post('https://registration-form-backend-api.vercel.app/register', { name, email, password });
             navigate('/login');
         } catch (err) {
             console.error(err);
